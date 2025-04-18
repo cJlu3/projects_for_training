@@ -2,6 +2,12 @@ version = 1
 revision = 1
 requires-python = ">=3.13"
 
+[manifest]
+members = [
+    "test-app",
+    "venv",
+]
+
 [[package]]
 name = "annotated-types"
 version = "0.7.0"
@@ -217,4 +223,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/86/37/dd92f1f9cedb5eaf74d9999044306e06abe65344ff197864175dbbd91871/uvicorn-0.34.1.tar.gz", hash = "sha256:af981725fc4b7ffc5cb3b0e9eda6258a90c4b52cb2a83ce567ae0a7ae1757afc", size = 76755 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5f/38/a5801450940a858c102a7ad9e6150146a25406a119851c993148d56ab041/uvicorn-0.34.1-py3-none-any.whl", hash = "sha256:984c3a8c7ca18ebaad15995ee7401179212c59521e67bfc390c07fa2b8d2e065", size = 62404 },
+]
+
+[[package]]
+name = "venv"
+version = "0.1.0"
+source = { virtual = "venv" }
+dependencies = [
+    { name = "fastapi" },
+    { name = "pydantic" },
+    { name = "uvicorn" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "fastapi", specifier = ">=0.115.12" },
+    { name = "pydantic", specifier = ">=2.11.3" },
+    { name = "uvicorn", specifier = ">=0.34.1" },
 ]
