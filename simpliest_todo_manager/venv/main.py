@@ -6,7 +6,6 @@ app = FastAPI()
 
 tasks = []
 
-
 class taskModel(BaseModel):
     title: str = Field(min_length=3)
     description: str
@@ -23,7 +22,7 @@ def get_tasks(task_id: int):
     for task in tasks:
         if task["id"] == task_id:
             task["isCompleted"] = True
-            return {"success": True, "message": "задание обновленно"}
+            return {"success": True, "message": "задание выполнено"}
     raise HTTPException(status_code=404, detail="задание не найдено")
 
 
