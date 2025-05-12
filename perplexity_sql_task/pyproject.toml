@@ -1,0 +1,13 @@
+[project]
+name = "perplexity-sql-task"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "psycopg>=3.2.7",
+    "pydantic>=2.11.4",
+    "pydantic-settings>=2.9.1",
+    "sqlalchemy>=2.0.40",
+]
