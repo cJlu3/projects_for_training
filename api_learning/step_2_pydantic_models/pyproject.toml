@@ -1,0 +1,16 @@
+[project]
+name = "step-2-pydantic-models"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "email-validator>=2.2.0",
+    "fastapi>=0.115.12",
+    "pydantic>=2.11.4",
+    "pydantic-extra-types[pendulum]>=2.10.4",
+    "uvicorn>=0.34.2",
+]
+
+[tool.uv.sources]
+pydantic = { git = "https://github.com/pydantic/pydantic", rev = "main" }

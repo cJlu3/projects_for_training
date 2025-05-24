@@ -1,5 +1,5 @@
 from database import engine, session_factory, Base
-from sqlalchemy import text  # insert
+from sqlalchemy import text, insert
 from models import WorkersOrm
 
 def return_sql_version():

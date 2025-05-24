@@ -1,0 +1,12 @@
+CREATE TABLE books (
+	id INTEGER NOT NULL, 
+	title VARCHAR NOT NULL, 
+	author VARCHAR NOT NULL, 
+	PRIMARY KEY (id)
+);
+CREATE TABLE books (
+	id INTEGER NOT NULL, 
+	title VARCHAR NOT NULL, 
+	author VARCHAR NOT NULL, 
+	PRIMARY KEY (id)
+);
